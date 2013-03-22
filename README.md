@@ -1,4 +1,4 @@
-# Chromatic
+# Chromatic - Version 0.6.1
 
 Chromatic is a Ruby String class extension. Adds methods to set text color, background color, and text effects on ruby console, irb,  and command line output, using ANSI escape sequences.  
 
@@ -14,11 +14,24 @@ gem 'chromatic'
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install chromatic
+```
+$ gem install chromatic
+```
+
+To easily test if the gem is installed properly, type the following into the commandline:
+
+```
+$ ruby -rubygems -e 'require "chromatic"; puts "Fibonacci Sequence - Brain Game".blue.on_red.blink'
+```
+
+
+		
 
 ## Usage
 

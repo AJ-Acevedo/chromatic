@@ -34,11 +34,12 @@ class String
   #
   MODES = {
     :default        => 0, # Turn off all attributes
-    :bold           => 1, # Set bold mode
-    :underline      => 4, # Set underline mode
-    :blink          => 5, # Set blink mode
+    :bold           => 1, 
+    :underline      => 4, 
+    :blink          => 5, 
     :swap           => 7, # Exchange foreground and background colors
-    :hide           => 8  # Hide text (foreground color would be the same as background)
+    :hide           => 8, # Hide text (foreground color would be the same as background)
+    :strikethrough  => 9, # Strike through, not supported on all systems
   }
 
   protected
@@ -60,29 +61,13 @@ class String
 
   public
 
-  #
-  # Change color of string
-  #
-  # Examples:
-  #
-  #   puts "This is blue".colorize( :blue )
-  #   puts "This is light blue".colorize( :light_blue )
-  #   puts "This is also blue".colorize( :color => :blue )
-  #   puts "This is light blue with red background".colorize( :color => :light_blue, :background => :red )
-  #   puts "This is light blue with red background".colorize( :light_blue ).colorize( :background => :red )
-  #   puts "This is blue text on red".blue.on_red
-  #   puts "This is red on blue".colorize( :red ).on_blue
-  #   puts "This is red on blue and underline".colorize( :red ).on_blue.underline
-  #   puts "This is blue text on red".blue.on_red.blink
-  #   puts "This is uncolorized".blue.on_red.uncolorize
-  #
   def colorize( params )
     return self unless STDOUT.isatty
   
     begin
       require 'Win32/Console/ANSI' if RUBY_PLATFORM =~ /win32/
     rescue LoadError
-      raise 'You must gem install win32console to use colorize on Windows'
+      raise 'You must gem install win32console to use chromatic on Windows'
     end
   
     color_parameters = {}

@@ -1,6 +1,6 @@
 # Chromatic
 [![Gem Version](https://badge.fury.io/rb/chromatic.png)](http://badge.fury.io/rb/chromatic)
-[![Build Status](https://secure.travis-ci.org/AJ-Acevedo/chromatic.png?branch=nextgen)][travis]
+[![Build Status](https://secure.travis-ci.org/AJ-Acevedo/chromatic.png?branch=nextgen)
 
 Chromatic is a Ruby String class extension. Adds methods to set text color, background color, and text effects on ruby console, irb,  and command line output, using ANSI escape sequences.  
 

@@ -1,8 +1,8 @@
 # Chromatic
 [![Gem Version](https://badge.fury.io/rb/chromatic.png)](http://badge.fury.io/rb/chromatic)
-[![Build Status](https://secure.travis-ci.org/AJ-Acevedo/chromatic.png?branch=nextgen)
+[![Build Status](https://travis-ci.org/AJ-Acevedo/chromatic.png?branch=nextgen)](https://travis-ci.org/AJ-Acevedo/chromatic)
 
-Chromatic is a Ruby String class extension. Adds methods to set text color, background color, and text effects on ruby console, irb,  and command line output, using ANSI escape sequences.  
+Chromatic is a Ruby String class extension. Adds methods to set text color, background color, and text formatting options on ruby console, and command line output, using ANSI escape sequences.  
 
 Chromatic is an updated fork of the [colorize](https://github.com/fazibear/colorize) gem. The original colorize gem became stale and it appear that the developer has abandoned the project.
 

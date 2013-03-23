@@ -4,7 +4,7 @@
 
 Chromatic is a Ruby String class extension. Adds methods to set text color, background color, and text formatting options on ruby console, and command line output, using ANSI escape sequences.  
 
-Chromatic is an updated fork of the [colorize](https://github.com/fazibear/colorize) gem. The original colorize gem became stale and it appear that the developer has abandoned the project.
+Chromatic is an updated fork of the [colorize](https://github.com/fazibear/colorize) gem. The original colorize gem became stale and it appears that the developer has abandoned the project.
 
 ## Installation
 
@@ -71,6 +71,8 @@ For more information on SemVer, please visit: http://semver.org/
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+Or just open a new [issue](https://github.com/AJ-Acevedo/chromatic/issues)
 
 ## Credit
 
